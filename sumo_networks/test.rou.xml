@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<vType accel="2.8" decel="4.5" id="CarA" length="5.0" minGap="0" maxSpeed="33.528" sigma="1.0" lcKeepRight="0" tau="0.1" maxSpeedLat="5.0" lcAssertive="10.0"/>
+	<vType accel="2.8" decel="4.5" id="CarB" length="5.0" minGap="2.5" maxSpeed="24.5872" sigma="0.9" lcKeepRight="0" speedFactor="1.3"/>
+	<route id="route01" edges="E0 E1 E2"/>
+	<flow id="slow_car" type="CarB" from="E0" to="E2" begin="0" end="3600" number="2400" departSpeed="random" departLane="random" departPos="random"/>
+	<vehicle depart="60" id="av_0" route="route01" type="CarA" color="1,0,0" departSpeed="max"/>
+</routes>
